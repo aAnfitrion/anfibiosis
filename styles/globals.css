@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-gradient-to-br from-purple-100 to-pink-100 bg-no-repeat bg-center;
+}
