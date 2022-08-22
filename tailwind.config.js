@@ -22,6 +22,15 @@ module.exports = {
       },
       pink: {
         100: '#FA2FB5'
+      },
+      blue: {
+        100: '#7289DA'
+      },
+      red: {
+        100: '#FF0000'
+      },
+      teal: {
+        100: '#1c1f24'
       }
     } 
   },
@@ -35,5 +44,8 @@ module.exports = {
     'col-span-7',
     'col-span-8',
     'col-span-9',
+    'hover:bg-blue-100',
+    'hover:bg-red-100',
+    'hover:bg-teal-100'
   ]
 }
