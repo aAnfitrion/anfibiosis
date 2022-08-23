@@ -7,6 +7,9 @@ import Contact from '../components/index/Contact/Contact'
 export default function Home() {
   return (
     <Container>
+      <Head>
+        <title>Anfibiosis - Inicio</title>
+      </Head>
       <MainPresentation/>
       <Skills/>
       <Contact/>
