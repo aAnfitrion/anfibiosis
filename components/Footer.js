@@ -1,6 +1,6 @@
 export default function Footer() {
   return(
-    <div className='border-t border-yaru-300'>
+    <div className='border-t border-yaru-500'>
       <div className='border-t border-yaru-400 p-4 flex justify-evenly text-yaru-800'>
         <div>
           <h1 className='text-xl'>Creado con</h1> 
