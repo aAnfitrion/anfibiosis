@@ -2,7 +2,7 @@ import ContactList from './ContactList.js'
 
 export default function Contact() {
   return(
-    <div className='py-10 bg-yaru-600 border-t border-yaru-300'>
+    <div className='py-10 bg-yaru-600 border-t border-yaru-500'>
       <div className='grid grid-cols-1'>
         <div className='flex justify-center'>
           <div className='text-center'>
