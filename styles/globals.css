@@ -6,3 +6,7 @@ html,
 body {
   @apply bg-gradient-to-br from-purple-100 to-pink-100 bg-no-repeat bg-center;
 }
+
+html * {
+  @apply text-yaru-100;
+}
