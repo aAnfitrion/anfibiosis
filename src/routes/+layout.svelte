@@ -1,49 +1,27 @@
-<script lang='ts'>
-	// The ordering of these imports is critical to your app working properly
-	import '../theme.postcss'	
-	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
+<script lang="ts">
+	import '../theme.postcss';
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
-	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
+
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
 </script>
 
-<!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
-		<!-- App Bar -->
-		<AppBar>
+		<AppBar background="bg-transparent" border="border-b border-primary-700/30">
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<img
+					src="https://media.discordapp.net/attachments/1032516925617614878/1116981303968006186/ad9d39456f480312ff69ab7daedc674f.png"
+					alt="Imagen de perfil de Anfitrion"
+					height="40"
+					width="40"
+				/>
+				<strong class="h3 uppercase pl-2">Anfitrion</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Discord
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Twitter
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
-					target="_blank"
-					rel="noreferrer"
-				>
-					GitHub
-				</a>
+				<a class="btn font-semibold" href="/proyectos" target="" rel="noreferrer"> Proyectos </a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
-	<!-- Page Route Content -->
 	<slot />
 </AppShell>
