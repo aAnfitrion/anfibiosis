@@ -1,8 +1,9 @@
 <script lang="ts">
 	import Icon from 'svelte-icons-pack/Icon.svelte';
-	import BiLinkExternal from 'svelte-icons-pack/bi/BiLinkExternal';
+	import AiOutlineHome from "svelte-icons-pack/ai/AiOutlineHome";
 	import AiOutlineStar from 'svelte-icons-pack/ai/AiOutlineStar';
 	import AiOutlineFork from 'svelte-icons-pack/ai/AiOutlineFork';
+	import AiFillGithub from "svelte-icons-pack/ai/AiFillGithub";
 
 	import SiJavascript from 'svelte-icons-pack/si/SiJavascript';
 	import SiTypescript from 'svelte-icons-pack/si/SiTypescript';
@@ -13,12 +14,13 @@
 		lenguaje: string,
 		estrellas: string,
 		ramas: string,
+		github: string,
 		web: string;
 
-  const color = "#2dd4bf"
+	const color = '#2dd4bf';
 </script>
 
-<a href="/" class="card p-4 col-span-2">
+<div class="card p-4 col-span-2">
 	<div class="flex justify-between items-center font-bold text-teal-400">
 		<h1 class="h3">{titulo}</h1>
 		<h1 class="h3">
@@ -47,10 +49,15 @@
 				{ramas}
 			</span>
 		</div>
-		{#if web}
-			<a href={web} class="h3" target="_blank">
-				<Icon src={BiLinkExternal} color="#10b981" />
-			</a>
-		{/if}
+		<div class="flex items-center gap-2 h3">
+				<a href={github} target="_blank">
+					<Icon src={AiFillGithub} color="#10b981" />
+				</a>
+			{#if web}
+				<a href={web} target="_blank">
+					<Icon src={AiOutlineHome} color="#10b981" />
+				</a>
+			{/if}
+		</div>
 	</div>
-</a>
+</div>
