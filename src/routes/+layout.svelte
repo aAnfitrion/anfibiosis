@@ -19,7 +19,8 @@
 				<strong class="h3 uppercase pl-2">Anfitrion</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a class="btn font-semibold" href="/proyectos" target="" rel="noreferrer"> Proyectos </a>
+				<a class="btn font-semibold" href="/" rel="noreferrer"> Presentación </a>
+				<a class="btn font-semibold" href="/proyectos" rel="noreferrer"> Proyectos </a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
