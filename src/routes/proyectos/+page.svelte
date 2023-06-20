@@ -19,7 +19,7 @@
 			>
 				<Icon src={BsGithub} />
 			</Li>
-			<Li href="" titulo="Mis proyectos actuales" desc="Lo que le estoy dedicando tiempo ahora">
+			<Li href="/proyectos/actuales" titulo="Mis proyectos actuales" desc="Lo que le estoy dedicando tiempo ahora">
 				<Icon src={VscTelescope} />
 			</Li>
       <Li href="" titulo="Mis proyectos futuros" desc="Lo que se viene">
